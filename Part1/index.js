@@ -35,6 +35,8 @@ function play(boxID) {
 			? alert(`${boardArray[0]} wins!`)
 		: boardArray[2] === boardArray[4] && boardArray[4] === boardArray[6] && boardArray[2]
 			? alert(`${boardArray[2]} wins!`)
+		: boardArray[0] && boardArray[1] && boardArray[2] && boardArray[3] && boardArray[4] && boardArray[5] && boardArray[6] && boardArray[7] && boardArray[8]
+			? alert("Cat's game!")
 		: null
 		}
 	}
