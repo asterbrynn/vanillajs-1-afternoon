@@ -3,16 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Styles</title>
+    <title>Poker Hand</title>
     <link rel="stylesheet" href="./index.css" />
   </head>
 <body>
   <header><h1>Poker Cards</h1></header>
     <main>
-        <section><span>A</span><span>♦</span><span>A</span></section>
-        <section><span>A</span><span>♣</span><span>A</span></section>
-        <section><span>A</span><span>♥</span><span>A</span></section>
-        <section><span>A</span><span>♠</span><span>A</span></section>
+        <section id="diamonds" class="suit"><span>A</span><span>♦</span><span>A</span></section>
+        <section id="clubs" class="suit"><span>A</span><span>♣</span><span>A</span></section>
+        <section id="hearts" class="suit"><span>A</span><span>♥</span><span>A</span></section>
+        <section id="spades" class="suit"><span>A</span><span>♠</span><span>A</span></section>
     </main>
+    <p>
+      <input id="id-input" type="text" placeholder="Set ID">
+      <input id="style-input" type="text" placeholder="Set Color">
+      <button id="edit-button" onclick="setCard()">Edit Card</button>
+      <button type="reset" onclick="resetCards()">Reset Cards</button>
+    </p>
+  <script src="./index.js"></script>
 </body>
 </html>
